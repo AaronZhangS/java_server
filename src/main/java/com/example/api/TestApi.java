@@ -30,4 +30,8 @@ public class TestApi {
 	public List<Rank> rank(){
 		return rankServiceImpl.allRank();
 	}
+	@RequestMapping("/webhook")
+	public String webhook(){
+		return "自动构建";
+	}
 }
