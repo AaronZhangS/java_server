@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.dao.RankMapper;
+import com.example.model.Match;
 import com.example.model.Rank;
 import com.example.service.RankService;
 
@@ -17,6 +18,11 @@ public class RankServiceImpl implements RankService{
 	@Override
 	public List<Rank> allRank() {
 		return rankMapper.allRank();
+	}
+
+	@Override
+	public List<Match> allMatch() {
+		return rankMapper.allMatch();
 	}
 
 }
