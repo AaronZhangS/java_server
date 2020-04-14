@@ -20,6 +20,6 @@ public interface RankMapper {
 	/**
 	 * 查询match表内容
 	 */
-	@Select("select * from match order by rank")
+	@Select("SELECT * FROM `match` ORDER BY rank")
 	List<Match> allMatch();
 }
