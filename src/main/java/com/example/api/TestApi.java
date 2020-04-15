@@ -49,6 +49,6 @@ public class TestApi {
 	@RequestMapping("/webhook")
 	@CrossOrigin
 	public String webhook(){
-		return "构建触发器，自动构建";
+		return "push自动构建成功";
 	}
 }
